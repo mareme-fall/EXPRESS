@@ -1,0 +1,35 @@
+<!-- index.ejs -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title> <!-- Utilisation de la variable title passée depuis le serveur -->
+    <!-- Inclusion du fichier CSS -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- En-tête avec la barre de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/services">Nos services</a></li>
+                <li><a href="/contact">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu de la page -->
+    <div class="container">
+        <h1><%= title %></h1> <!-- Affichage du titre de la page -->
+        <p>Bienvenue sur notre site web !</p>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Mon Entreprise</p>
+    </footer>
+</body>
+</html>
